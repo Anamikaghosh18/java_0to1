@@ -1,4 +1,4 @@
-package com.example.componenetscan;
+package employee.componenetscan;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
