@@ -11,6 +11,7 @@ public class App {
                 new ClassPathXmlApplicationContext("AutowireByType.xml");
 
         Car car = (Car) context.getBean("myCar");
+
         car.display();
     }
 }
