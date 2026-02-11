@@ -1,16 +1,13 @@
 package springboot;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class Controller {
 
-    @GetMapping("/hello") // to connect to the api
-    public Controller hello(){
-        return new HelloResponse("Hello world");
+    @GetMapping("/hello/{name}") // to connect to the api
+    public Controller hello(@PathVariable String name){
+        return new HelloResponse("Hello " + name);
     }
 
     @PostMapping("/hello")
